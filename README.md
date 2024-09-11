@@ -2,8 +2,6 @@
 
 Este é um sistema simples de gerenciamento de tarefas desenvolvido usando Laravel 9, PHP, MySQL e HTML/CSS.
 
-![Imagem ilustrativa da Aplicação](./gerenciador-tarefa.png)
-
 ## Funcionalidades
 
 - **Listar Tarefas**: Exibe todas as tarefas cadastradas.
@@ -36,7 +34,10 @@ Este é um sistema simples de gerenciamento de tarefas desenvolvido usando Larav
 ```bash
 https://github.com/walminho/ZeniteCRUD
 ```
-2. Se houver erro com o arquivo autoload de vendor/autoload.php, parecido com
+
+2. Faça o setup do servidor e do banco de dados. Veja as configurações do arquivo **.env.example** ou **.env**.
+   
+3. Se houver erro com o arquivo autoload de vendor/autoload.php, parecido com
 
         #### Warning: require(C:\laragon\www\{project-directory}\ZeniteCRUD\public/../vendor/autoload.php): Failed to open stream: No such file or directory in C:\laragon\www\t\ZeniteCRUD\public\index.php on line 34
         #### Fatal error: Uncaught Error: Failed opening required 'C:\laragon\www\{project-directory}\ZeniteCRUD\public/../vendor/autoload.php' (include_path='.;C:/laragon/etc/php/pear') in  C:\laragon\www\t\ZeniteCRUD\public\index.php:34 Stack trace: #0 {main} thrown in C:\laragon\www\t\ZeniteCRUD\public\index.php on line 34
@@ -47,10 +48,16 @@ https://github.com/walminho/ZeniteCRUD
 composer install
 ```
 
-3. Um segundo erro provável é a renomeação automática do arquivo **.env** para **.env.example**. -- Isto provoca o erro "**500 | Server Error**". Se isto ocorrer, renomei **.env.example** para **.env**.
+4. Renomeação do arquivo **.env.example** para **.env**.
 
-    Pode ser necessário recriar a application key (chave da aplicação) utilisando o artisan. Se isso for solicitado, faça:
+   ```mv .env.example .env```
+
+    -- Isto provoca o erro "**500 | Server Error**".
+
+5. Crie a app key (chave da aplicação) utilisando o artisan.
 
     ```php artisan key:generate```
 
-Após isso, a aplicação deve funcionar.
+Após isso, a aplicação deve funcionar e mostrar algo como a imagem a seguir.
+
+![Imagem ilustrativa da Aplicação](./gerenciador-tarefa.png)
