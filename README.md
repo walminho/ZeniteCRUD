@@ -49,7 +49,9 @@ mv .env.example .env
 
 4. Crie a app key (chave da aplicação) utilisando o artisan.
 
-    ```php artisan key:generate```
+```bash
+php artisan key:generate
+```
 
 Após isso, a aplicação deve funcionar e mostrar algo como a imagem a seguir.
 
