@@ -2,6 +2,8 @@
 
 Este é um sistema simples de gerenciamento de tarefas desenvolvido usando Laravel 9, PHP, MySQL e HTML/CSS.
 
+![Imagem ilustrativa da Aplicação](./gerenciador-de-tarefa.png)
+
 ## Funcionalidades
 
 - **Listar Tarefas**: Exibe todas as tarefas cadastradas.
