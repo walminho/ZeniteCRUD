@@ -50,3 +50,5 @@ composer install
     Pode ser necessário recriar a application key (chave da aplicação) utilisando o artisan. Se isso for solicitado, faça:
 
     ```php artisan key:generate```
+
+Após isso, a aplicação deve funcionar.
