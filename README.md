@@ -45,7 +45,7 @@ https://github.com/walminho/ZeniteCRUD
 composer install
 ```
 
-3. Um segundo erro provável é a renomeação automática do arquivo **.env** para **.env.example**. Se isto ocorrer, renomei **.env.example** para **.env**.
+3. Um segundo erro provável é a renomeação automática do arquivo **.env** para **.env.example**. -- Isto provoca o erro **500 | Server Error**. Se isto ocorrer, renomei **.env.example** para **.env**.
 
     Pode ser necessário recriar a application key (chave da aplicação) utilisando o artisan. Se isso for solicitado, faça:
 
