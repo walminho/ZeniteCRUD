@@ -32,7 +32,7 @@ Este é um sistema simples de gerenciamento de tarefas desenvolvido usando Larav
 1. Clone o repositório e mude para o diretório do projeto, ZeniteCRUD.
 
 ```bash
-https://github.com/walminho/ZeniteCRUD
+git clone https://github.com/walminho/ZeniteCRUD
 cd ZeniteCRUD
 ```
 2. Istalar o composer
