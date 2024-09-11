@@ -29,32 +29,25 @@ Este é um sistema simples de gerenciamento de tarefas desenvolvido usando Larav
 
 ### Passos para Instalação
 
-1. Clone o repositório:
+1. Clone o repositório e mude para o diretório do projeto, ZeniteCRUD.
 
 ```bash
 https://github.com/walminho/ZeniteCRUD
+cd ZeniteCRUD
 ```
-
-2. Faça o setup do servidor e do banco de dados. Veja as configurações do arquivo **.env.example** ou **.env**.
-   
-3. Se houver erro com o arquivo autoload de vendor/autoload.php, parecido com
-
-        #### Warning: require(C:\laragon\www\{project-directory}\ZeniteCRUD\public/../vendor/autoload.php): Failed to open stream: No such file or directory in C:\laragon\www\t\ZeniteCRUD\public\index.php on line 34
-        #### Fatal error: Uncaught Error: Failed opening required 'C:\laragon\www\{project-directory}\ZeniteCRUD\public/../vendor/autoload.php' (include_path='.;C:/laragon/etc/php/pear') in  C:\laragon\www\t\ZeniteCRUD\public\index.php:34 Stack trace: #0 {main} thrown in C:\laragon\www\t\ZeniteCRUD\public\index.php on line 34
-
-    ### execute
+2. Istalar o composer
 
 ```bash
 composer install
 ```
 
-4. Renomeação do arquivo **.env.example** para **.env**.
+3. Renomeie o arquivo **.env.example**:
 
-   ```mv .env.example .env```
+```bash
+mv .env.example .env
+```
 
-    -- Isto provoca o erro "**500 | Server Error**".
-
-5. Crie a app key (chave da aplicação) utilisando o artisan.
+4. Crie a app key (chave da aplicação) utilisando o artisan.
 
     ```php artisan key:generate```
 
